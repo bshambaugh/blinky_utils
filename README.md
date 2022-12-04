@@ -5,3 +5,5 @@ To create the zip archive file for use as a library, it should be:
 sh build.sh
 
 but fix the bug 1st
+
+Thanks to https://www.youtube.com/watch?v=_xRv-3FWyLE&list=PLZBMwMmvlpnkWeNEl3LyE4qnK83wpjL-y for helping me make this happen.
