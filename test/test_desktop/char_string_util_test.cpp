@@ -4,10 +4,15 @@
 
 TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_sequence_ignoring_null_match_string_and_case) {
 
+  /*
   string expected = "ABBA";
   string actual = "ABBA";
   const char* expected_str = expected.c_str();
   const char* actual_str = actual.c_str();
+  */
+
+  const char* expected_str = "ABBA";
+  const char* actual_str = "ABBA";
 
   EXPECT_EQ(char_sequence_compare(expected_str,actual_str),true);
 }
@@ -15,44 +20,69 @@ TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_seq
 
 TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_sequence_ignoring_null_same_string_different_case) {
 
+/*
   string expected = "ABBA";
   string actual = "abba";
   const char* expected_str = expected.c_str();
   const char* actual_str = actual.c_str();
+*/
+
+  const char* expected_str = "ABBA";
+  const char* actual_str = "abba";
 
   EXPECT_NE(char_sequence_compare(expected_str,actual_str),true);
 }
 
 TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_sequence_ignoring_null_different_string) {
 
+/*
   string expected = "abba1";
   string actual = "abba";
   const char* expected_str = expected.c_str();
   const char* actual_str = actual.c_str();
+*/
+
+  const char* expected_str = "abba1";
+  const char* actual_str = "abba";
 
   EXPECT_NE(char_sequence_compare(expected_str,actual_str),true);
 }
 
 TEST(compareString, test_two_strings_that_are_not_equal) {
 
+  /*
   string expected = "abba1";
   string actual = "abba";
+  */
+
+  const char* expected = "abba1";
+  const char* actual = "abba";
+
   
   EXPECT_NE(compareString(expected,actual),true);
 }
 
 TEST(compareString, test_two_strings_that_are_equal) {
 
+  /*
   string expected = "abba";
   string actual = "abba";
+  */
+
+  const char* expected = "abba";
+  const char* actual = "abba";
   
   EXPECT_EQ(compareString(expected,actual),true);
 }
 
 TEST(compareString, test_two_strings_that_are_equal_but_not_same_case) {
-
+  /*
   string expected = "abba";
   string actual = "ABBA";
+  */
+
+  const char* expected = "abba";
+  const char* actual = "ABBA";
   
   EXPECT_NE(compareString(expected,actual),true);
 }
@@ -69,8 +99,13 @@ TEST(hexCharacterStringToBytes, convert_arrays_to_hex_equal) {
   const uint8_t MaxByteArraySize = 32;
   uint8_t byteArray[MaxByteArraySize] = {0};
 
+  /*
   string hashHex = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1150";
   const char* stringHex_str = hashHex.c_str();
+  */
+
+  const char* stringHex_str = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1150";
+
   hexCharacterStringToBytes(byteArray,stringHex_str);
   for(int i=0;i < MaxByteArraySize;i++) {
      ASSERT_EQ(hash[i],byteArray[i]); 
@@ -89,8 +124,13 @@ TEST(hexCharacterStringToBytes, convert_arrays_to_hex_not_equal_byte_array_diffe
   const uint8_t MaxByteArraySize = 32;
   uint8_t byteArray[MaxByteArraySize] = {0};
 
+  /*
   string hashHex = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1150";
   const char* stringHex_str = hashHex.c_str();
+  */
+
+  const char* stringHex_str = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1150";
+
   hexCharacterStringToBytes(byteArray,stringHex_str);
   for(int i=0;i < MaxByteArraySize - 1;i++) {
      EXPECT_EQ(hash[i],byteArray[i]); 
@@ -112,8 +152,13 @@ TEST(hexCharacterStringToBytes, convert_arrays_to_hex_not_equal_hex_string_diffe
   const uint8_t MaxByteArraySize = 32;
   uint8_t byteArray[MaxByteArraySize] = {0};
 
+ /*
   string hashHex = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1151";
   const char* stringHex_str = hashHex.c_str();
+*/
+
+  const char* stringHex_str = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1151";
+
   hexCharacterStringToBytes(byteArray,stringHex_str);
   for(int i=0;i < MaxByteArraySize - 1;i++) {
      EXPECT_EQ(hash[i],byteArray[i]); 
@@ -134,8 +179,13 @@ TEST(hexCharacterStringToBytes, convert_arrays_to_hex_not_equal_hex_string_diffe
   const uint8_t MaxByteArraySize = 32;
   uint8_t byteArray[MaxByteArraySize] = {0};
 
+  /*
   string hashHex = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1160";
   const char* stringHex_str = hashHex.c_str();
+  */
+
+  const char* stringHex_str = "1e34ec8b07258a84df2f3a8fbbc17e9bd17e65a42154078fee578db9f5fc1160";
+
   hexCharacterStringToBytes(byteArray,stringHex_str);
   for(int i=0;i < MaxByteArraySize - 1;i++) {
      EXPECT_EQ(hash[i],byteArray[i]); 

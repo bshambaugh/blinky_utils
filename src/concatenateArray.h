@@ -1,7 +1,10 @@
-//#include <cstring>
-#include "missing_gnu_iso/cstring"
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+#include <math.h>
+#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include <ctype.h>
 
 #pragma once
 
