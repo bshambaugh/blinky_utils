@@ -1,4 +1,4 @@
-#include <concatenateArray.hpp>
+#include <concatenateArray.h>
 #include <gtest/gtest.h>
 
 TEST(voidUint8Array, void_a_uint8_array) {

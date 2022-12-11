@@ -1,4 +1,4 @@
-#include <packet_parsing.hpp>
+#include <packet_parsing.h>
 #include <gtest/gtest.h>
 
 TEST(parse_packet, parse_a_packet) {
