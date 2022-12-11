@@ -1,6 +1,7 @@
 
 #include <char_string_util.h>
 #include <gtest/gtest.h>
+#include <string>
 
 TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_sequence_ignoring_null_match_string_and_case) {
 
@@ -85,6 +86,20 @@ TEST(compareString, test_two_strings_that_are_equal_but_not_same_case) {
   const char* actual = "ABBA";
   
   EXPECT_NE(compareString(expected,actual),true);
+}
+
+
+TEST(compareString, test_two_strings_that_are_equal_using_cpp) {
+  /*
+  string expected = "abba";
+  string actual = "ABBA";
+  */
+
+
+  std::string expected = "ABBA";
+  std::string actual = "ABBA";
+
+ EXPECT_EQ(compareString(expected.c_str(),actual.c_str()),true);
 }
 
 TEST(hexCharacterStringToBytes, convert_arrays_to_hex_equal) {

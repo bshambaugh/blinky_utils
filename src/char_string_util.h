@@ -1,9 +1,8 @@
 #include <string.h>
 #include <stdbool.h>
 
-// I need to write a scratch file and test compareString by itself....
-bool compareString(char *s1, char *s2)
-{  
+bool compareString(const char* s1,const  char* s2)
+{
       if(strcmp(s1,s2) == 0) {
            return true;
       } else {
