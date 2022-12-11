@@ -1,5 +1,4 @@
-//#include <cstring>
-#include "missing_gnu_iso/cstring"
+#include <cstring>
 #include <iostream>
 using namespace std;
 

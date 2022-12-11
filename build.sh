@@ -13,7 +13,7 @@ valgrind -v --log-file="valgrind_results.txt" .pio/build/native/program
 #done
 mkdir blinky_utils
 cd src
-for f in *h; do 
+for f in *hpp; do 
      cp "$f" "../blinky_utils/${f%.c}"
      echo "$f"
 done
@@ -21,5 +21,4 @@ done
 cd ..
 #rm blinky_utils/main.cpp
 cp src/library_properties/library.properties blinky_utils/
-cp -r src/missing_gnu_iso/ blinky_utils/
 zip -r blinky_utils.zip blinky_utils/

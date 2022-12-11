@@ -1,5 +1,5 @@
 
-#include <char_string_util.h>
+#include <char_string_util.hpp>
 #include <gtest/gtest.h>
 
 TEST(char_sequence_compare, test_that_two_char_arrays_contain_same_character_sequence_ignoring_null_match_string_and_case) {
