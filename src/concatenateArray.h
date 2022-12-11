@@ -6,8 +6,6 @@
 
 #include <ctype.h>
 
-#pragma once
-
 void voidUint8Array(int len, uint8_t a[]);
 
 void voidCharArray(int len, char a[]);
@@ -36,6 +34,3 @@ void mergeCharArray(int len, unsigned char *message, char *a) {
        strcat(a,stt); 
     }
 }
-
-
-
