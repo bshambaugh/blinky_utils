@@ -4,5 +4,4 @@
 .vscode/launch.json
 .vscode/ipch
 blinky_utils/
-blinky_utils.zip
 valgrind_results.txt
