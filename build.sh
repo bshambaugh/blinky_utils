@@ -20,6 +20,6 @@ done
 #cp *.h ../blinky_utils/
 cd ..
 #rm blinky_utils/main.cpp
-cp src/library_properties/library.properties blinky_utils/
+cp src/library_properties/* blinky_utils/
 cp -r src/missing_gnu_iso/ blinky_utils/
 zip -r blinky_utils.zip blinky_utils/
