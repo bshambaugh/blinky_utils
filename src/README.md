@@ -1,4 +1,4 @@
-**// First three voidUint8Array, voidCharArray, and mergeCharArray  #include <concatenateArray.h> **
+** First three voidUint8Array, voidCharArray, and mergeCharArray  #include <concatenateArray.h> **
 
 Prototype: void voidUint8Array(int len, uint8_t a[]);
 
@@ -21,7 +21,7 @@ Running:
 voidCharArray(4, input);
 
 After running:
-char expected[4] = { 0,  0, 0, 0 };
+char input[4] = { '\0',  '\0', '\0', '\0' };
 
 ------------------------------------------------------------
 Prototype: void mergeCharArray(int len, unsigned char *message, char *a);
@@ -34,11 +34,11 @@ Running:
 mergeCharArray(4,inputOne,inputTwo);
 
 After running:
-
+char inputTwo[9] = { 'A', 'B', 'C', 'D', '\0', '\0', '\0', '\0', '\0' };
 
 
 ------------------------------------------------------------
-**// Second three compareString, char_sequence_compare, and hexCharacterStringToBytes #include <char_string_util.h> **
+** Second three compareString, char_sequence_compare, and hexCharacterStringToBytes #include <char_string_util.h> **
 
 Prototype: bool compareString(const char* s1,const  char* s2);
 
@@ -50,7 +50,7 @@ Running:
 compareString(expected,actual);
 
 After Running:
-false
+0
 
 Before running:
 const char* expected = "abba";
@@ -60,7 +60,7 @@ Running:
 compareString(expected,actual);
 
 Ater running:
-true
+1
 
 Before running:
 std::string expected = "ABBA";
@@ -70,7 +70,7 @@ Running:
 compareString(expected.c_str(),actual.c_str()
 
 After running
-true
+1
 
 ------------------------------------------------------------
 Prototype: bool char_sequence_compare(const char a[],const char b[]);
@@ -83,7 +83,7 @@ Running:
 char_sequence_compare(expected_str,actual_str);
 
 After running:
-false
+0
 
 Before running:
 const char* expected_str = "ABBA";
@@ -93,7 +93,7 @@ Running:
 char_sequence_compare(expected_str,actual_str);
 
 After running:
-false
+1
 
 ------------------------------------------------------------
 Prototype: void hexCharacterStringToBytes(unsigned char *byteArray, const char *hexString);
@@ -121,6 +121,7 @@ hexCharacterStringToBytes(byteArray,stringHex_str);
 
 After running:
 
+byteArray = [ 30, 52, 236, 139, 7, 37, 138, 132, 223, 47, 58, 143, 187, 193, 126, 155, 209, 126, 101, 164, 33, 84, 7, 143, 238, 87, 141, 185, 245, 252, 17, 80 ];
 
 
 
