@@ -1,4 +1,4 @@
-// First three voidUint8Array, voidCharArray, and mergeCharArray  #include <concatenateArray.h>
+**// First three voidUint8Array, voidCharArray, and mergeCharArray  #include <concatenateArray.h> **
 
 Prototype: void voidUint8Array(int len, uint8_t a[]);
 
@@ -38,7 +38,7 @@ After running:
 
 
 ------------------------------------------------------------
-// Second three compareString, char_sequence_compare, and hexCharacterStringToBytes #include <char_string_util.h>
+**// Second three compareString, char_sequence_compare, and hexCharacterStringToBytes #include <char_string_util.h> **
 
 Prototype: bool compareString(const char* s1,const  char* s2);
 
