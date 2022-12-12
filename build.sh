@@ -22,4 +22,4 @@ cd ..
 #rm blinky_utils/main.cpp
 cp src/* blinky_utils/
 #cp src/library_properties/* blinky_utils/
-zip -r blinky_utils-master.zip blinky_utils/
+zip -r blinky_utils.zip blinky_utils/
