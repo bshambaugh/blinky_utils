@@ -21,7 +21,7 @@ Running:
 voidCharArray(4, input);
 
 After running:
-char input[4] = { '\0',  '\0', '\0', '\0' };
+char input[4] = { '\0',  '\0', '\0', '\0' }; // best guess from serial out on ESP32
 
 ------------------------------------------------------------
 Prototype: void mergeCharArray(int len, unsigned char *message, char *a);
@@ -34,7 +34,7 @@ Running:
 mergeCharArray(4,inputOne,inputTwo);
 
 After running:
-char inputTwo[9] = { 'A', 'B', 'C', 'D', '\0', '\0', '\0', '\0', '\0' };
+char inputTwo[9] = { 'A', 'B', 'C', 'D', '\0', '\0', '\0', '\0', '\0' }; // best guess from serial out on ESP32
 
 
 ------------------------------------------------------------
